@@ -1,7 +1,5 @@
 from flask import Flask
 import datetime
-# import schedule
-# import time
 import requests
 import json
 import config_app
@@ -90,12 +88,3 @@ def slackNotification(message):
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
     app.run(threaded=True, port=5000)
-
-
-# schedule.every().day.at("20:45").do(logout)
-# schedule.every().day.at("09:15").do(login)
-# schedule.every(3).seconds.do(job)
-
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)
